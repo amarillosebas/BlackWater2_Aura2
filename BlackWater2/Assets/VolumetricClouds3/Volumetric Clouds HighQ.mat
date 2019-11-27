@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Volumetric Clouds HighQ
   m_Shader: {fileID: 4800000, guid: 6dbb1fc55cba3964684746532b78b82a, type: 3}
-  m_ShaderKeywords: Y_AXIS _ _COMPLEXLIGHTING_MODE _HQPOINTLIGHT _NEW_SHADING _NORMALMAP
-    _SSSHADOW_MAPBLEND _VOLUMETRIC_SSS
+  m_ShaderKeywords: Y_AXIS _ _COMPLEXLIGHTING_MODE _DISTBLEND_POST _HQPOINTLIGHT _NEW_SHADING
+    _NORMALMAP _SSSHADOW_MAPBLEND _VOLUMETRIC_SSS
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -42,8 +42,8 @@ Material:
     - _CoverageLow: -1
     - _CoverageMapOn: 0
     - _DirectContribution: 2
-    - _DistBlendPost: 0
-    - _DistanceBlend: 0.4
+    - _DistBlendPost: 1
+    - _DistanceBlend: 2
     - _DrawDistance: 860
     - _HQPointLight: 1
     - _IndirectContribution: 0.74
