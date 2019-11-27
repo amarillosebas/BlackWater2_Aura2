@@ -76,7 +76,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
     - _CloudSpherePosition: {r: 0, g: 0, b: 0, a: 0}
-    - _CloudTransform: {r: 189.71, g: 20, b: 0, a: 0}
+    - _CloudTransform: {r: 425.5, g: 20, b: 0, a: 0}
     - _Shading: {r: 0.01, g: 0.01, b: 0.01, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SkyLightAttenuation: {r: 0.5, g: 0.5, b: 0.5, a: 1}

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GPUIShaderVariantCollection
+  m_Shaders:
+  - first: {fileID: 4800000, guid: 1a6ceac7f4c639b4096c21f11e4e7a56, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: 2a1fda71c9e820e42b9cd64424f8452e, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: 8a4d727fcfc589e4bb076bd5279e5201, type: 3}
+    second:
+      variants:
+      - keywords: _ALPHATEST_ON _LIGHTMAPPING_REALTIME _NORMALMAP _SPECGLOSSMAP _UNIFORMWIND_ON
+          _UVSEC_UV1
+        passType: 0
+      - keywords: _ALPHATEST_ON _EMISSION _LIGHTMAPPING_DYNAMIC_LIGHTMAPS _LIGHTMAPPING_REALTIME
+          _UNIFORMWIND_ON _UVSEC_UV1
+        passType: 0
+      - keywords: _ALPHATEST_ON _LIGHTMAPPING_DYNAMIC_LIGHTMAPS _LIGHTMAPPING_REALTIME
+          _NORMALMAP _SPECGLOSSMAP _UNIFORMWIND_ON _UVSEC_UV1
+        passType: 0
+  - first: {fileID: 4800000, guid: 998acd8de1cbc7540833e565fda1154d, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: a1fe6b00539636f49bae5f911c8ccc55, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: b018d5a5e2799dd469d0d9f2474d499c, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: _NORMALMAP
+        passType: 0
+      - keywords: _EMISSION _LIGHTMAPPING_DYNAMIC_LIGHTMAPS _LIGHTMAPPING_REALTIME
+          _NORMALMAP _UVSEC_UV1
+        passType: 0
+  - first: {fileID: 4800000, guid: b1a05ad601a72334d8529afd35a4e2c8, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 4800000, guid: d52a38c4e70daf4449eaab298ba27ce6, type: 3}
+    second:
+      variants: []
+  - first: {fileID: 4800000, guid: ea4018e98671dbf40b0d47588bb71400, type: 3}
+    second:
+      variants:
+      - keywords: SPDTREE_HUE_VARIATION
+        passType: 0
+  - first: {fileID: 4800000, guid: efd2fdc8b03b9b94badac43f0a4d6e15, type: 3}
+    second:
+      variants:
+      - keywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_BRANCH_DETAIL
+        passType: 0
+      - keywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_FROND
+        passType: 0
+      - keywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_LEAF
+        passType: 0
+      - keywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_BRANCH
+        passType: 0

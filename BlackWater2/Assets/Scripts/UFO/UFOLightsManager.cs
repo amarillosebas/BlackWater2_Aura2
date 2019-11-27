@@ -5,7 +5,7 @@ using UnityEngine;
 public class UFOLightsManager : MonoBehaviour {
 	[Space(5f)]
 	[Header("Dependencies")]
-	public GameObject[] lightObjects;
+	public Renderer[] lightRenderers;
 	public Light[] lights;
 	public Light beamLight;
 	public Transform player;
@@ -39,12 +39,12 @@ public class UFOLightsManager : MonoBehaviour {
 
 	void Start () {
 		foreach (Light l in lights) {
-			//l.enabled = false;
 			_startingIntensity = l.intensity;
 			_startingRange = l.range;
+			l.intensity = 0f;
 		}
-		foreach (GameObject lg in lightObjects) {
-			lg.SetActive(false);
+		foreach (Renderer lg in lightRenderers) {
+			lg.enabled = false;
 		}
 
 		beamObject.SetActive(false);
@@ -93,15 +93,19 @@ public class UFOLightsManager : MonoBehaviour {
 		if (pattern == 0) {
 			StartCoroutine(TurnLightOff(_currentLight));
 			_currentLight++;
-			if (_currentLight >= lightObjects.Length) _currentLight = 0;
-			lightObjects[_currentLight].SetActive(true);
+			if (_currentLight >= lightRenderers.Length) _currentLight = 0;
+			lightRenderers[_currentLight].enabled = true;
+			lights[_currentLight].intensity = _startingIntensity;
 		}
 		StartCoroutine(LightTiming());
 	}
 
 	IEnumerator TurnLightOff (int i) {
-		yield return new WaitForSeconds(lightTime * lightTurnOffTime * lightObjects.Length);
-		if (pattern == 0) lightObjects[i].SetActive(false);
+		yield return new WaitForSeconds(lightTime * lightTurnOffTime * lightRenderers.Length);
+		if (pattern == 0) {
+			lightRenderers[i].enabled = false;
+			lights[i].intensity = 0f;
+		}
 	}
 
 	public void ChangePattern (int p) {
@@ -112,8 +116,11 @@ public class UFOLightsManager : MonoBehaviour {
 					l.intensity = _startingIntensity;
 					l.range = _startingRange;
 				}
-				foreach (GameObject lg in lightObjects) {
-					lg.SetActive(false);
+				foreach (Renderer lg in lightRenderers) {
+					lg.enabled = false;
+				}
+				foreach (Light l in lights) {
+					l.intensity = 0f;
 				}
 				beamLight.gameObject.SetActive(false);
 				beamObject.SetActive(false);
@@ -123,8 +130,11 @@ public class UFOLightsManager : MonoBehaviour {
 					l.enabled = true;
 					l.range = blinkingRange;
 				}
-				foreach (GameObject lg in lightObjects) {
-					lg.SetActive(true);
+				foreach (Renderer lg in lightRenderers) {
+					lg.enabled = true;
+				}
+				foreach (Light l in lights) {
+					l.intensity = _startingIntensity;
 				}
 				beamLight.gameObject.SetActive(true);
 				beamObject.SetActive(true);
