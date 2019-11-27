@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &179354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 462546}
+  - 114: {fileID: 11483352}
+  m_Layer: 0
+  m_Name: CloudsEventExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &462546
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1330.40002, y: 98.4000015, z: 259.200012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11483352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dab88d3319bd14c8a6e0575b8e6faf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudMaterial: {fileID: 2100000, guid: 0fd5e0d9c271a3f4c88e44b7d123f30a, type: 2}
+  eventThreshold: .5
+  events:
+  - eventName: 4368616e676547616d654f626a6563744e616d65
+    monitoredTransform: {fileID: 462546}
+    IsInside: 0
+    OnEnter:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 179354}
+          m_MethodName: 7365745f6e616d65
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e652c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 496e73696465436c6f756473
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+    OnExit:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 179354}
+          m_MethodName: 7365745f6e616d65
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e652c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 4f757473696465436c6f756473
+            m_BoolArgument: 0
+          m_CallState: 1
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+  showDebugCubes: 1
+  debugCubeCount: 20
+  debugCubeSize: 1
+  showEventTrigger: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 179354}
+  m_IsPrefabParent: 1

@@ -1,0 +1,65 @@
+
+
+Lux Water Changelog
+
+Version 1.062
+# LuxWater WaterSurface shaders: Basic support for orthographic projection added.
+# Planar reflections: Support for orthographic cameras added.
+# LuxWater WaterSurface shaders: Far normal scale added.
+# Lux Water Volumes: Fixed depth issues when using tessellation.
+# Water Projectors fixed (after pause).
+
+Version 1.061
+# LuxWater WaterSurface shaders: Foam normals fixed.
+# LuxWater WaterSurface shaders: Tangent rotation fixed.
+
+Version 1.06
+# LuxWater WaterSurface shader switched to CG.
+# LuxWater WaterSurface Tessellation shader added.
+# Normal Projectors: Format of normal texture changed to support tessellation and extrusion.
+
+Version 1.051
+# Metal: Missing "CopyDepth" shader added.
+
+Version 1.05
+# Metal: Normals fixed when using "Culling" = "Back" or "Front".
+# Metal: Deferred rendering support added.
+# Scripts added to sample the displacement/current water height as produced by Gerstner Waves.
+# Shader compilation warnings fixed.
+
+Version 1.041
+# Hotfix for running out of interpolators when using Water Projectors.
+
+Version 1.04
+# Preview of Water Projectors added.
+# Fixed underwater not being rendered if blur was disabled.
+# Changed "_Lux_Time" to Time.timeSinceLevelLoad (was Time.time)
+
+Version 1.032
+# Hotfix for non DXT5 normals.
+
+Version 1.031
+# Hotfix for version 1.03 due to renaming issues.
+
+Version 1.03
+# Renamed base water shader to "Lux Water/WaterSurface".
+# Cleaned up directories and naming.
+# Underwater rendering: Fixed missing intensity multiplier for ambient lighting, fixed missing linearization of intensity for ambient and sun lighting.
+# Underwater rendering: Fixed ambient diffuse lighting on foam.
+# Underwater rendering: Fixed caustic tiling not being picked up. 
+# Default caustic texture tweaked.
+
+Version 1.02
+# Gerstner displacement moved to world space.
+# Culling property added.
+# Custom fog added. By default Lux Water supports "Exponential Squared". Other fog modes have to be enabled by editing the shader.
+# Water volumes added (preview)
+
+Version 1.01
+# UV texture mapping added. You may have to enable/disable it to make your materials pick up world space texturing again.
+# Translucent lighting fixed.
+# Foam caps (from gerstner waves) smoothed.
+# Removed doubled edge blending (in lighting function).
+
+Version 1.0
+# Initial release.

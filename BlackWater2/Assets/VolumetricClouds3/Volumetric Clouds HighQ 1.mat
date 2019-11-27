@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Volumetric Clouds HighQ 1
+  m_Shader: {fileID: 4800000, guid: 6dbb1fc55cba3964684746532b78b82a, type: 3}
+  m_ShaderKeywords: Y_AXIS _ _COMPLEXLIGHTING_MODE _HQPOINTLIGHT _NEW_SHADING _NORMALMAP
+    _SSSHADOW_MAPBLEND _VOLUMETRIC_SSS
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2741
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CoverageMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PerlinNormalMap:
+        m_Texture: {fileID: 2800000, guid: 5e7810496d75bdc48b3f9a5ec5d74dab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alignment: 0
+    - _AlphaCut: 0.01
+    - _BlendWithShadowmap: 1
+    - _CloudBaseFlatness: 0.1
+    - _CloudDensity: 0.26
+    - _CloudFlatness: 0.97
+    - _CloudLocalScale: 1
+    - _ComplexLightingMode: 1
+    - _Coverage: 0.24
+    - _CoverageHigh: 1
+    - _CoverageLow: -1
+    - _CoverageMapOn: 0
+    - _DirectContribution: 1
+    - _DistBlendPost: 0
+    - _DistanceBlend: 0.4
+    - _DrawDistance: 860
+    - _HQPointLight: 1
+    - _IndirectContribution: 0.74
+    - _IndirectOcclusion: 2.32
+    - _IndirectOcclusionNormalized: 0
+    - _IndirectSaturation: 0.8
+    - _LodBase: -10
+    - _LodOffset: 5
+    - _MaxSteps: 75
+    - _NewShading: 1
+    - _Normalized: 0.16
+    - _NormalmapState: 1
+    - _NormalsIntensity: 16.72
+    - _OrthographicPerspective: 0
+    - _RenderQueue: 2741
+    - _RenderShadowsOnly: 0
+    - _SSShadows: 0
+    - _ShowStepCount: 0
+    - _SilverLining: 0.8
+    - _SphereHorizonStretch: 0.33
+    - _SphereMapped: 0
+    - _SphericalMapping: 0
+    - _StepParallelMult: 35
+    - _StepSize: 0.3
+    - _StepSkip: 1
+    - _Tiling: 1870.82
+    - _TimeMult: 0.1
+    - _TimeMultSecondLayer: 4
+    - _VolumetricSSShadows: 1
+    m_Colors:
+    - _BaseColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
+    - _CloudSpherePosition: {r: 0, g: 0, b: 0, a: 0}
+    - _CloudTransform: {r: 189.71, g: 20, b: 0, a: 0}
+    - _Shading: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SkyLightAttenuation: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _WindDirection: {r: 0, g: 0, b: 1, a: 0}

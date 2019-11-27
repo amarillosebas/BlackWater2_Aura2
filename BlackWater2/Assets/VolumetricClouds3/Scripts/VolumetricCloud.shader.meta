@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 6dbb1fc55cba3964684746532b78b82a
+timeCreated: 1525538367
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _PerlinNormalMap: {fileID: 2800000, guid: 55f5c739e5711f841b02183ae8d0298c, type: 3}
+  - _DensityMap: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

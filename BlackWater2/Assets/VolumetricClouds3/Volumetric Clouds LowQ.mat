@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Volumetric Clouds LowQ
+  m_Shader: {fileID: 4800000, guid: 6dbb1fc55cba3964684746532b78b82a, type: 3}
+  m_ShaderKeywords: Y_AXIS _ _DISABLE_DIRECT _DISABLE_INDIRECT _NEW_SHADING _NORMALMAP
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2501
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _PerlinNormalMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 5e7810496d75bdc48b3f9a5ec5d74dab, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CoverageMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _NewShading
+        second: 1
+      data:
+        first:
+          name: _DirectContribution
+        second: 0
+      data:
+        first:
+          name: _NormalmapState
+        second: 1
+      data:
+        first:
+          name: _NormalsIntensity
+        second: 1
+      data:
+        first:
+          name: _Normalized
+        second: .159999996
+      data:
+        first:
+          name: _SilverLining
+        second: .800000012
+      data:
+        first:
+          name: _IndirectContribution
+        second: 0
+      data:
+        first:
+          name: _IndirectOcclusion
+        second: 1
+      data:
+        first:
+          name: _IndirectOcclusionNormalized
+        second: .5
+      data:
+        first:
+          name: _ComplexLightingMode
+        second: 0
+      data:
+        first:
+          name: _IndirectSaturation
+        second: .800000012
+      data:
+        first:
+          name: _DistanceBlend
+        second: .300000012
+      data:
+        first:
+          name: _DistBlendPost
+        second: 0
+      data:
+        first:
+          name: _SSShadows
+        second: 0
+      data:
+        first:
+          name: _BlendWithShadowmap
+        second: 0
+      data:
+        first:
+          name: _VolumetricSSShadows
+        second: 0
+      data:
+        first:
+          name: _RenderShadowsOnly
+        second: 0
+      data:
+        first:
+          name: _HQPointLight
+        second: 0
+      data:
+        first:
+          name: _Coverage
+        second: 0
+      data:
+        first:
+          name: _CoverageMapOn
+        second: 0
+      data:
+        first:
+          name: _CoverageLow
+        second: -1
+      data:
+        first:
+          name: _CoverageHigh
+        second: 1
+      data:
+        first:
+          name: _CloudDensity
+        second: 2
+      data:
+        first:
+          name: _CloudLocalScale
+        second: 1
+      data:
+        first:
+          name: _CloudBaseFlatness
+        second: .100000001
+      data:
+        first:
+          name: _CloudFlatness
+        second: 1
+      data:
+        first:
+          name: _TimeMult
+        second: .100000001
+      data:
+        first:
+          name: _TimeMultSecondLayer
+        second: 4
+      data:
+        first:
+          name: _Tiling
+        second: 1500
+      data:
+        first:
+          name: _SphereMapped
+        second: 0
+      data:
+        first:
+          name: _SphericalMapping
+        second: 0
+      data:
+        first:
+          name: _SphereHorizonStretch
+        second: .330000013
+      data:
+        first:
+          name: _Alignment
+        second: 0
+      data:
+        first:
+          name: _OrthographicPerspective
+        second: 0
+      data:
+        first:
+          name: _DrawDistance
+        second: 500
+      data:
+        first:
+          name: _MaxSteps
+        second: 15
+      data:
+        first:
+          name: _StepSize
+        second: 2
+      data:
+        first:
+          name: _StepSkip
+        second: 1
+      data:
+        first:
+          name: _StepParallelMult
+        second: 55
+      data:
+        first:
+          name: _LodBase
+        second: -10
+      data:
+        first:
+          name: _LodOffset
+        second: 5
+      data:
+        first:
+          name: _AlphaCut
+        second: .00999999978
+      data:
+        first:
+          name: _RenderQueue
+        second: 2501
+      data:
+        first:
+          name: _ShowStepCount
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _BaseColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Shading
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _SkyLightAttenuation
+        second: {r: .5, g: .5, b: .5, a: 1}
+      data:
+        first:
+          name: _ShadowColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _WindDirection
+        second: {r: 0, g: 0, b: 1, a: 0}
+      data:
+        first:
+          name: _CloudTransform
+        second: {r: 100, g: 20, b: 0, a: 0}
+      data:
+        first:
+          name: _CloudSpherePosition
+        second: {r: 0, g: 0, b: 0, a: 0}
