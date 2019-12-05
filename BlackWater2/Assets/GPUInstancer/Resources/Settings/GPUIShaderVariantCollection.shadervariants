@@ -70,3 +70,12 @@ ShaderVariantCollection:
         passType: 0
       - keywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_BRANCH
         passType: 0
+  - first: {fileID: 4800000, guid: d7e0e0bbb8a45c349899f874a02b6572, type: 3}
+    second:
+      variants:
+      - keywords: EFFECT_BUMP EFFECT_EXTRA_TEX EFFECT_HUE_VARIATION EFFECT_SUBSURFACE
+          _WINDQUALITY_BEST
+        passType: 0
+      - keywords: EFFECT_BILLBOARD EFFECT_BUMP EFFECT_EXTRA_TEX EFFECT_HUE_VARIATION
+          EFFECT_SUBSURFACE _WINDQUALITY_FASTEST
+        passType: 0

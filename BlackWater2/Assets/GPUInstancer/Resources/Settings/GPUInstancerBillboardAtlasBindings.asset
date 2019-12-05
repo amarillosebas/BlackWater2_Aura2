@@ -12,24 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3456c8e7299cac2469cb5775b323d8a4, type: 3}
   m_Name: GPUInstancerBillboardAtlasBindings
   m_EditorClassIdentifier: 
-  billboardAtlasBindings:
-  - prefab: {fileID: 100000, guid: b6972eaa35c2e574e8ab5083a59d8459, type: 3}
-    atlasResolution: 2048
-    frameCount: 8
-    albedoAtlasTexture: {fileID: 2800000, guid: b79c44d76ec3c6b4ea232e2c6ff2c3b5,
-      type: 3}
-    normalAtlasTexture: {fileID: 2800000, guid: e1d40f247d094434e9728b16829927db,
-      type: 3}
-    quadSize: 40.401283
-    yPivotOffset: 11.638474
-    modifiedDate: 11/27/2019 17:29:25.939
-  - prefab: {fileID: 100004, guid: 70417e08343ef354db9a6c398faf67bc, type: 3}
-    atlasResolution: 2048
-    frameCount: 8
-    albedoAtlasTexture: {fileID: 2800000, guid: 38fd119fb57a6a349b09a0e733e8f83d,
-      type: 3}
-    normalAtlasTexture: {fileID: 2800000, guid: ef4ca02871a859d4bb4b6d9314c83653,
-      type: 3}
-    quadSize: 29.77701
-    yPivotOffset: 0.42849922
-    modifiedDate: 11/27/2019 17:29:26.865
+  billboardAtlasBindings: []
